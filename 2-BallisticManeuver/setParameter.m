@@ -49,8 +49,8 @@ result0.S_m=3;                      %飞行器特性面积,单位：平方米
 %再入段机动参数
 result0.ManeuverStartTime = 20;     % 进入再入段经过多少秒机动
 result0.ManeuvergY = 10;            % 机动加速度，位于升力方向
-result0.ManeuvergZ = 5;            % 机动加速度，垂直于弹道平面
-result0.ManeuverVzmax = 30;        %垂直于弹道平面速度最大值
+result0.ManeuvergZ = 10;            % 机动加速度，垂直于弹道平面
+result0.ManeuverVzmax = 40;        %垂直于弹道平面速度最大值
 
 %设置量测误差
 result0.radar_noise_r = 10;                      %雷达测距离误差，单位：m

@@ -91,7 +91,7 @@ function [XReentryS,YReentryS,ZReentryS,VXReentryS,VYReentryS,VZReentryS,thetaXR
         elseif i > ManeuverVzmax/ManeuvergZ/delta_t + ManeuverStartTime
             ZReentryG(i) = ZReentryG(i-1)+ManeuverVzmax*delta_t;
         else            
-            ZReentryG(i) = ZReentryG(i-1)+0.5*ManeuvergZ*((i - ManeuverStartTime)*delta_t)^2;
+            ZReentryG(i) = ZReentryG(i-1)+0.5*ManeuvergZ*delta_t^2;
         end
         
 		coordS=G2S(launchBLA,launchLandLatiLong,[XReentryG(i),YReentryG(i),ZReentryG(i)],environment);%坐标转换，从launch坐标系到地心直角坐标系,qzt
